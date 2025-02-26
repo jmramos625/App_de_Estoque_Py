@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1136</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1136</width>
+    <height>627</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1136</width>
+    <height>627</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_de_itens_menu">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_item2.gif</normaloff>../Images/add_item2.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_itens_menu">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de Itens</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_setores">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_sectors.gif</normaloff>../Images/add_sectors.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_setores">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de Setores</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_fornecedores">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_fornecedor.gif</normaloff>../Images/add_fornecedor.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_fornecedores">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de Fornecedores</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_categorias">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_categories.gif</normaloff>../Images/add_categories.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_categorias">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de Categorias</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_un_medida">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_un_medidas.gif</normaloff>../Images/add_un_medidas.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_un_medida">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de                   Un. de Medida</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QPushButton" name="pushButton_cadastro_usuarios">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>180</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../Images/add_user.gif</normaloff>../Images/add_user.gif</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="autoRepeat">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_cadastro_de_usuarios">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>366</width>
+            <height>90</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Heading</family>
+            <pointsize>26</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cadastro de Usuários</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_horario">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="text">
+       <string>HORARIO</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1136</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <addaction name="actionCadastro_de_Item"/>
+    <addaction name="actionCadastro_de_Setores"/>
+    <addaction name="actionCadastro_de_Fornecedores"/>
+    <addaction name="actionCadastro_de_Categorias"/>
+    <addaction name="actionCadastro_de_Un_de_Medida"/>
+    <addaction name="actionCadastro_de_Usu_rios"/>
+    <addaction name="actionCadastro_de_tipos_de_Movimenta_o"/>
+   </widget>
+   <widget class="QMenu" name="menuRelat_rios">
+    <property name="title">
+     <string>Relatórios</string>
+    </property>
+    <widget class="QMenu" name="menuItens">
+     <property name="title">
+      <string>Itens</string>
+     </property>
+     <addaction name="actionItens_INFO"/>
+     <addaction name="actionValores_Gerais_3"/>
+     <addaction name="actionItens_X_Fornecedores"/>
+     <addaction name="actionItens_X_Categorias"/>
+    </widget>
+    <addaction name="menuItens"/>
+    <addaction name="actionFornecedores"/>
+    <addaction name="actionUsu_rios"/>
+    <addaction name="actionCategorias"/>
+    <addaction name="actionUnidades_de_Medida"/>
+    <addaction name="actionSetores"/>
+    <addaction name="actionTipos_de_Movimenta_o"/>
+   </widget>
+   <widget class="QMenu" name="menuMovimenta_o">
+    <property name="title">
+     <string>Movimentação</string>
+    </property>
+    <widget class="QMenu" name="menuEntrada">
+     <property name="title">
+      <string>Entrada</string>
+     </property>
+     <addaction name="actionEntrada_de_Item"/>
+     <addaction name="actionAjuste_Positivos"/>
+    </widget>
+    <widget class="QMenu" name="menuSa_da">
+     <property name="title">
+      <string>Saída</string>
+     </property>
+     <addaction name="actionAloca_o_em_Setor"/>
+     <addaction name="actionAjustes_Negativos"/>
+     <addaction name="actionPerda"/>
+     <addaction name="actionDevolu_o"/>
+    </widget>
+    <addaction name="menuEntrada"/>
+    <addaction name="menuSa_da"/>
+   </widget>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuRelat_rios"/>
+   <addaction name="menuMovimenta_o"/>
+  </widget>
+  <action name="actionCadastro_de_Item">
+   <property name="text">
+    <string>Cadastro de Item</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Setores">
+   <property name="text">
+    <string>Cadastro de Setores</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Fornecedores">
+   <property name="text">
+    <string>Cadastro de Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Categorias">
+   <property name="text">
+    <string>Cadastro de Categorias</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Un_de_Medida">
+   <property name="text">
+    <string>Cadastro de Un. de Medida</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_Usu_rios">
+   <property name="text">
+    <string>Cadastro de Usuários</string>
+   </property>
+  </action>
+  <action name="actionCadastro_de_tipos_de_Movimenta_o">
+   <property name="text">
+    <string>Cadastro de tipos de Movimentação</string>
+   </property>
+  </action>
+  <action name="actionValores_Gerais">
+   <property name="text">
+    <string>Valores Gerais</string>
+   </property>
+  </action>
+  <action name="actionFornecedores">
+   <property name="text">
+    <string>Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionUsu_rios">
+   <property name="text">
+    <string>Usuários</string>
+   </property>
+  </action>
+  <action name="actionCategorias">
+   <property name="text">
+    <string>Categorias</string>
+   </property>
+  </action>
+  <action name="actionUnidades_de_Medida">
+   <property name="text">
+    <string>Unidades de Medida</string>
+   </property>
+  </action>
+  <action name="actionValores_Gerais_2">
+   <property name="text">
+    <string>Valores Gerais</string>
+   </property>
+  </action>
+  <action name="actionItens_INFO">
+   <property name="text">
+    <string>Itens (INFO)</string>
+   </property>
+  </action>
+  <action name="actionValores_Gerais_3">
+   <property name="text">
+    <string>Valores Gerais</string>
+   </property>
+  </action>
+  <action name="actionItens_X_Fornecedores">
+   <property name="text">
+    <string>Itens X Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionItens_X_Categorias">
+   <property name="text">
+    <string>Itens X Categorias</string>
+   </property>
+  </action>
+  <action name="actionSetores">
+   <property name="text">
+    <string>Setores</string>
+   </property>
+  </action>
+  <action name="actionTipos_de_Movimenta_o">
+   <property name="text">
+    <string>Tipos de Movimentação</string>
+   </property>
+  </action>
+  <action name="actionEntrada_de_Item">
+   <property name="text">
+    <string>Compra/Entrada</string>
+   </property>
+  </action>
+  <action name="actionAjuste_Positivos">
+   <property name="text">
+    <string>Ajuste Positivos</string>
+   </property>
+  </action>
+  <action name="actionAloca_o_em_Setor">
+   <property name="text">
+    <string>Alocação em Setor</string>
+   </property>
+  </action>
+  <action name="actionAjustes_Negativos">
+   <property name="text">
+    <string>Ajustes Negativos</string>
+   </property>
+  </action>
+  <action name="actionPerda">
+   <property name="text">
+    <string>Perda</string>
+   </property>
+  </action>
+  <action name="actionDevolu_o">
+   <property name="text">
+    <string>Devolução</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
