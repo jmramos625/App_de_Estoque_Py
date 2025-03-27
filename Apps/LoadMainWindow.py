@@ -1,6 +1,7 @@
 # We will load the UI file created in the previous part using the PyQt6 module.
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QDialog, QPushButton
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QDialog, QPushButton, QLabel
 from PyQt6.QtGui import QMovie, QIcon, QPixmap
+from PyQt6.QtCore import QTime, QTimer, QDateTime
 import sys
 # to import the UI file, we use the uic module from PyQt6.
 from PyQt6 import uic
@@ -8,6 +9,8 @@ from dotenv import set_key
 
 #importing another window
 from CasdastroDeItem import cadastro_de_item_UI #import the item registration
+from CadastroDeSetores import cadastro_de_setores_UI #import the sectors registration
+from CadastroDeFornecedores import cadastro_de_fornecedores_UI #import the suppliers registration
 
 # we will do a class to call the UI file.
 class main_windows_UI(QMainWindow):
@@ -24,6 +27,8 @@ class main_windows_UI(QMainWindow):
         self.pushButton_cadastro_categorias = self.findChild(QPushButton, "pushButton_cadastro_categorias")
         self.pushButton_cadastro_un_medida = self.findChild(QPushButton, "pushButton_cadastro_un_medida")
         self.pushButton_cadastro_usuarios = self.findChild(QPushButton, "pushButton_cadastro_usuarios")
+        
+        self.label_horario = self.findChild(QLabel, "label_horario")
         
         #setting gif animation
         self.add_item_gif = QMovie("Images\\add_item2.gif")
@@ -52,12 +57,34 @@ class main_windows_UI(QMainWindow):
         
         #opening the window with the button
         self.pushButton_cadastro_de_itens_menu.clicked.connect(self.open_cadastro_de_item)
+        self.pushButton_cadastro_setores.clicked.connect(self.open_cadastro_de_setores)
+        self.pushButton_cadastro_fornecedores.clicked.connect(self.open_cadastro_de_fornecedores)
+                
+        #setting the timer
+        self.timer = QTimer(self)
+        self.timer.timeout.connect(self.update_time)
+        self.timer.start(1)
     
     
     #buttons and your functions
     def open_cadastro_de_item(self):
         self.cadastro_de_item_ui = cadastro_de_item_UI()
         self.cadastro_de_item_ui.show()
+        
+    def open_cadastro_de_setores(self):
+        self.cadastro_de_setores_ui = cadastro_de_setores_UI()
+        self.cadastro_de_setores_ui.show()
+        
+    def open_cadastro_de_fornecedores(self):
+        self.cadastro_de_fornecedores_ui = cadastro_de_fornecedores_UI()
+        self.cadastro_de_fornecedores_ui.show()
+        
+    #hours funcion
+    def update_time(self):
+        current_time = QDateTime.currentDateTime()
+        time_text = current_time.toString('hh:mm:ss')
+        day_of_week = current_time.toString('dddd')
+        self.label_horario.setText(f'{day_of_week}, {time_text}')
     
     
     #functions about the gif

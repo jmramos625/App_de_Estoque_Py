@@ -66,46 +66,75 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-234</y>
+      <y>0</y>
       <width>899</width>
-      <height>1051</height>
+      <height>1061</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label_cadastro_itens">
-       <property name="minimumSize">
-        <size>
-         <width>880</width>
-         <height>73</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>880</width>
-         <height>73</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>Sitka Heading</family>
-         <pointsize>36</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <property name="inputMethodHints">
-        <set>Qt::ImhNone</set>
-       </property>
-       <property name="text">
-        <string>Cadastro de Itens</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_19">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>81</width>
+           <height>81</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>81</width>
+           <height>81</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../Images/add_item2.gif</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_cadastro_itens">
+         <property name="minimumSize">
+          <size>
+           <width>790</width>
+           <height>73</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>790</width>
+           <height>73</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Heading</family>
+           <pointsize>36</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhNone</set>
+         </property>
+         <property name="text">
+          <string>Cadastro de Itens</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">

@@ -126,17 +126,20 @@ class cadastro_de_item_UI(QWidget):
                 # 15 itens data
                 # the combobox and TextEdit use different ways to get the text
                 
+                #setting constants
+                isActive = True #this determines that item is a Active Item
                 
                 #query to put the data in the database
-                query = "INSERT INTO itens (codItem, nomeItem, descItem, codbarrasItem, fornecedorItem, unItem, qtdeatualItem, estmaxItem, estminItem, pontoressupItem, valormedioItem, setorsaidaItem, categoriaItem, rotatividadeItem, infoextraItem) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-                values = (codItem, nomeItem, descItem, codbarrasItem, fornecedorItem, unItem, qtdeatualItem, estmaxItem, estminItem, pontoressupItem, valormedioItem, setorsaidaItem, categoriaItem, rotatividadeItem, infoextraItem) # this is the values to be inserted in the table.
+                query = "INSERT INTO itens (codItem, nomeItem, descItem, codbarrasItem, fornecedorItem, unItem, qtdeatualItem, estmaxItem, estminItem, pontoressupItem, valormedioItem, setorsaidaItem, categoriaItem, rotatividadeItem, infoextraItem, isActiveItem) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                values = (codItem, nomeItem, descItem, codbarrasItem, fornecedorItem, unItem, qtdeatualItem, estmaxItem, estminItem, pontoressupItem, valormedioItem, setorsaidaItem, categoriaItem, rotatividadeItem, infoextraItem, isActive) # this is the values to be inserted in the table.
                 
                 # executing the SQL command.
                 mycursor.execute(query, values) # taking the values to be inserted and the SQL command.
                 
                 mydb.commit() # commiting the changes in the database.
                 
-                self.label_feedback.setText("Item: " + nomeItem + ", added successfully") # to give the feedback to the user.
+                self.limpar_tela()
+                self.label_feedback.setText("Item: " + nomeItem + ", adicionado com sucesso!") # to give the feedback to the user
             except mdb.Error as e:
                 error_message = f"Error: {str(e)}"
                 self.label_feedback.setText(error_message)
